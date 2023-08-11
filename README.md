@@ -74,11 +74,11 @@ git remote -v - посмотреть привязку удаленного к л
 **modified** - измененный. Файл имеет изменения относитально последней сохраненной в Git версии.  
   
 ### Жизненный цикл файла  
-'''mermaid  
+```mermaid  
 flowchart TD  
    A(Untracked \n неотслеживаемый) -->|git add| B(Tracked + Staged \n в списке на коммит)  
    B -->|git commit| C(Tracked \n отслеживаемый)  
    B -->|изменения| D(Modified \n измененный)  
    D -->|git add| B  
    C -->|изменения| D  
-'''  
+```  
